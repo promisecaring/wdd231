@@ -1,136 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Promise Oghene | WDD231 Home</title>
+    <title>Promise Oghene | WDD231 Home</title>
 
-<meta name="description" content="WDD231 Course Home Page">
-<meta name="author" content="Promise Oghene">
+    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="author" content="Promise Oghene">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
-<script src="scripts/navigation.js" defer></script>
-<script src="scripts/date.js" defer></script>
-<script src="scripts/course.js" defer></script>
-
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">
-<img src="images/logo.png" alt="Site Logo">
-<span>Promise Oghene</span>
-</div>
+    <div class="logo">
+        <img src="images/logo.png" alt="Site Logo">
+        <span>Promise Oghene</span>
+    </div>
 
-<button id="menu"></button>
-<nav>
+    <button id="menu" aria-label="Toggle navigation"></button>
 
-<ul class="navigation">
-
-<li><a href="index.html" class=>Home</a></li>
-
-<li><a href="chamber/index.html">Chamber Project</a></li>
-
-<li><a href="final/index.html">Final Project</a></li>
-
-</ul>
-
-</nav>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
 
 </header>
 
 <main>
 
-<h1>Home</h1>
+    <h1>Home</h1>
 
-<div class="top">
+    <div class="top">
 
-<section>
+        <section>
+            <h2>About Me</h2>
 
-<h2>About Me</h2>
+            <p>
+                Hello! I'm Promise Oghene, a web development student from Lagos, Nigeria with a passion for creating responsive and user-friendly websites. I'm currently pursuing a degree in Web Development at BYU–Idaho. I enjoy building projects with HTML, CSS, and JavaScript while continuously improving my frontend development skills. My goal is to become a professional software developer and create innovative digital solutions that make a positive impact.
+            </p>
+        </section>
 
-<p>
+        <section>
+            <h2>Student Photo</h2>
 
-Hello! I'm Promise Oghene, a web development student from Lagos, Nigeria with a passion for creating responsive and user-friendly websites. I'm currently pursuing a degree in Web development at BYU–Idaho. I enjoy building projects with HTML, CSS, and JavaScript while continuously improving my frontend development skills. My goal is to become a professional software developer and create innovative digital solutions that make a positive impact.
+            <img src="images/profile-photo.jpeg" alt="Promise Oghene">
+        </section>
 
-</p>
+    </div>
 
-</section>
+    <section>
 
-<section>
+        <h2>Web Certificate Courses</h2>
 
-<h2>Student Photo</h2>
+        <div class="buttons">
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+        </div>
 
-<img src="images/profile-photo.jpeg" alt="Promise Oghene">
+        <div id="courses"></div>
 
-</section>
+        <p id="credits"></p>
 
-</div>
-
-<section>
-
-<h2>Web Certificate Courses</h2>
-
-<div class="buttons">
-
-<button id="all">All</button>
-
-<button id="cse">CSE</button>
-
-<button id="wdd">WDD</button>
-
-</div>
-
-<div id="courses"></div>
-
-<p id="credits"></p>
-
-</section>
+    </section>
 
 </main>
 
 <footer>
 
-<div class="social">
+    <div class="social">
 
-<a href="https://linkedin.com/" target="_blank">    
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
             <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
 
-
-<a href="https://github.com/" target="_blank">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
             <img src="images/github_logo.svg" alt="GitHub">
+        </a>
 
-
-<a href="https://x.com/" target="_blank">
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
             <img src="images/twitter_logo.svg" alt="X">
+        </a>
 
-</div>
+    </div>
 
-<p>
+    <p>
+        &copy; <span id="year"></span> Promise Oghene, Nigeria
+    </p>
 
-© <span id="year"></span>
-
-Promise Oghene
-
-Nigeria
-
-</p>
-
-<p id="lastModified"></p>
+    <p id="lastModified"></p>
 
 </footer>
 
 </body>
-
 </html>

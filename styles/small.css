@@ -1,19 +1,16 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-font-family:Roboto,sans-serif;
-
-max-width:1100px;
-
-margin:auto;
-
+body {
+    font-family: Roboto, sans-serif;
+    max-width: 1100px;
+    margin: auto;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -21,58 +18,43 @@ header {
     background: #4b2e05;
     color: white;
     padding: 1rem;
-
 }
 
-
-.logo{
-
-display:flex;
-
-align-items:center;
-
-gap:10px;
-
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo img{
-
-width:50px;
-
+.logo img {
+    width: 50px;
 }
 
-#menu{
-
-font-size:2rem;
-
-background:none;
-
-border:none;
-
-color:white;
-
-cursor:pointer;
-
+/* Hamburger Menu */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
 }
 
-.navigation{
-
-display:flex;
-
-list-style:none;
-
-
-
-.navigation {
-    display: none;
+#menu::before {
+    content: "☰";
 }
 
-.navigation.open {
+#menu.open::before {
+    content: "✕";
+}
+
+/* Navigation */
 .navigation {
     display: none;
     flex-direction: column;
     list-style: none;
     width: 100%;
+    margin-top: 1rem;
 }
 
 .navigation.open {
@@ -80,157 +62,71 @@ list-style:none;
 }
 
 .navigation li {
-    padding: .4rem;
     background: #333;
-}    display: flex;
-    flex-direction: column;
+    padding: .4rem;
 }
 
+.navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
 }
 
-
-.navigation a{
-
-color:white;
-
-text-decoration:none;
-
-display:block;
-
+.navigation a:hover {
+    background: #8b5e3c;
 }
 
-.navigation a:hover{
-
-background:#8b5e3c;
-
+.active {
+    background: #b8860b;
 }
 
-.active{
-
-background:#b8860b;
-
+/* Main */
+main {
+    padding: 1rem;
 }
 
-main{
-
-padding:1rem;
-
+.top {
+    display: block;
 }
 
-.top{
-
-display:block;
-
+section {
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
 }
 
-section{
-
-border:1px solid #ccc;
-
-margin-bottom:1rem;
-
+section h2 {
+    background: #4b2e05;
+    color: white;
+    padding: .5rem;
+    text-align: center;
 }
 
-section h2{
-
-background:#4b2e05;
-
-color:white;
-
-padding:.5rem;
-
-text-align:center;
-
+section p {
+    padding: 1rem;
 }
 
-section p{
-
-padding:1rem;
-
+section img {
+    display: block;
+    margin: auto;
+    width: 180px;
+    padding: 1rem;
 }
 
-section img{
-
-display:block;
-
-margin:auto;
-
-width:180px;
-
-padding:1rem;
-
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem;
 }
 
-.buttons{
-
-display:flex;
-
-justify-content:center;
-
-gap:10px;
-
-padding:1rem;
-
+.buttons button {
+    padding: .5rem 1rem;
+    cursor: pointer;
 }
 
-.buttons button{
-
-padding:.5rem 1rem;
-
-cursor:pointer;
-
-}
-
-#courses{
-
-display:grid;
-
-gap:10px;
-
-padding:1rem;
-
-}
-
-.course{
-
-padding:1rem;
-
-border:1px solid #555;
-
-text-align:center;
-
-}
-
-.completed{
-
-background:#4b2e05;
-
-color:white;
-
-}
-
-footer{
-
-text-align:center;
-
-padding:1rem;
-
-background:#eee;
-
-}
-
-.social{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-margin-bottom:1rem;
-
-}
-
+/* Courses */
 #courses {
     display: grid;
     gap: 1rem;
@@ -242,7 +138,8 @@ margin-bottom:1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 }
 
 .course h3 {
@@ -269,10 +166,26 @@ margin-bottom:1rem;
     color: #ffd700;
 }
 
-#menu::before{
-    content:"☰";
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
 }
 
-#menu.open::before{
-    content:"✕";
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    transition: transform .3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
 }

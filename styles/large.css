@@ -11,7 +11,7 @@ display:none;
 display:flex;
 
 gap:20px;
-direction:flex-start;
+flex-direction:row;
 }
 
 .navigation li{
