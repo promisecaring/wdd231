@@ -68,20 +68,26 @@ list-style:none;
 }
 
 .navigation.open {
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation.open {
     display: flex;
+}
+
+.navigation li {
+    padding: .4rem;
+    background: #333;
+}    display: flex;
     flex-direction: column;
 }
 
 }
 
-.navigation li{
-
-padding:.4rem;
-
-background:#333;
-
-
-}
 
 .navigation a{
 
@@ -261,4 +267,12 @@ margin-bottom:1rem;
 .completed h3,
 .completed h4 {
     color: #ffd700;
+}
+
+#menu::before{
+    content:"☰";
+}
+
+#menu.open::before{
+    content:"✕";
 }
