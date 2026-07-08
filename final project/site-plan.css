@@ -1,0 +1,34 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f4f8ff;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;
+    line-height: 1.6;
+    color: #222;
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    color: #003366;
+}
+
+.color-box {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #000;
+    margin: 5px 0;
+}
+
+.color1 { background: #003366; }
+.color2 { background: #FDB813; }
+
+.wireframe {
+    background: #fff;
+    padding: 15px;
+    border: 1px dashed #666;
+    margin: 15px 0;
+    white-space: pre;
+    font-family: monospace;
+    font-size: 14px;
+}

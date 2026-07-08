@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Price Bakery",
+      "address": "30 Banks-Anthony, Ikeja-Lagos",
+      "phone": "+234 8144463646",
+      "website": "https://sunrisebakery.com",
+      "image": "bakery.jpeg",
+      "membershipLevel": 3,
+      "description": "A family-owned bakery known for fresh bread and delicious pastries."
+    },
+    {
+      "name": "TechSpark Solutions",
+      "address": "45 Innovation Drive, Lagos",
+      "phone": "+234 9077945800",
+      "website": "https://techspark.com",
+      "image": "tech_solution.jpeg",
+      "membershipLevel": 2,
+      "description": "Providing software and digital marketing services to businesses of all sizes."
+    },
+    {
+      "name": "Green Leaf Restaurant",
+      "address": "7 Palm Avenue, Lagos",
+      "phone": "+234 809 556 2310",
+      "website": "https://greenleafrestaurant.com",
+      "image": "restaurant.jpeg",
+      "membershipLevel": 1,
+      "description": "Serving healthy meals and organic smoothies in the heart of the city."
+    },
+    {
+      "name": "Protea Hotel",
+      "address": "100 Beach Road, Lagos",
+      "phone": "+234 808 998 1122",
+      "website": "https://proteahotel.com",
+      "image": "hotel.jpeg",
+      "membershipLevel": 3,
+      "description": "A luxury 4-star hotel offering comfort, dining, and conference facilities."
+    },
+    {
+      "name": "Skyline Transport",
+      "address": "21 Main Terminal, Lagos",
+      "phone": "+234 803 440 9822",
+      "website": "https://skylinetransport.com",
+      "image": "transport.jpeg",
+      "membershipLevel": 2,
+      "description": "Connecting cities with reliable and safe travel options."
+    },
+    {
+      "name": "Elite Fitness Gym",
+      "address": "8 Sport Plaza, Lagos",
+      "phone": "+234 805 778 1234",
+      "website": "https://elitefitness.com",
+      "image": "gym.jpeg",
+      "membershipLevel": 1,
+      "description": "A modern fitness center with experienced trainers and quality equipment."
+    },
+    {
+      "name": "BrightFuture Academy",
+      "address": "33 Knowledge Street, Lagos",
+      "phone": "+234 806 556 7845",
+      "website": "https://brightfutureacademy.edu.ng",
+      "image": "academy.jpeg",
+      "membershipLevel": 2,
+      "description": "An educational institution providing quality learning for young minds."
+    }
+  ]
+}
