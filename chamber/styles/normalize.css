@@ -1,0 +1,74 @@
+/* normalize.css | Basic browser reset */
+
+/* Document
+   ========================================================================== */
+html {
+  line-height: 1.15;
+  /* Correct the line height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font size adjustments after orientation changes */
+}
+
+/* Sections
+   ========================================================================== */
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+/* Grouping content
+   ========================================================================== */
+hr {
+  height: 0;
+  color: inherit;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+/* Embedded content
+   ========================================================================== */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms
+   ========================================================================== */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Interactive
+   ========================================================================== */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+[hidden] {
+  display: none;
+}
