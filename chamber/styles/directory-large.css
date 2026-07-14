@@ -1,35 +1,28 @@
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  #menu {
-    display: block; /* Show menu button on small screens */
-  }
+@media screen and (min-width: 768px) {
 
-  nav ul {
-    display: none; /* Hide the full menu by default */
-    flex-direction: column;
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 0 0 8px 8px;
-  }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-  nav ul.show {
-    display: flex; /* Show menu when toggled */
-  }
-}
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
 
-/* Hide the menu toggle button on large screens */
-@media (min-width: 769px) {
-  #menu {
-    display: none;
-  }
+    #menu {
+        display: none;
+    }
 
-  nav ul {
-    display: flex; /* Always show full nav on desktop */
-    position: static;
-    flex-direction: row;
-  }
+    /* Three-column grid on larger screens */
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Two-column layout for list view */
+    #members.list .member-card {
+        grid-template-columns: 180px 1fr;
+    }
 }

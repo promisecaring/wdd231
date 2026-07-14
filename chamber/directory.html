@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="This is the Lagos Chamber of Commerce directory for exploring, navigating and joining.">
   <meta name="author" content="Promise Oghene">
-  <title>Lagos Chamber of Commerce Directory</title>
-
-  <!-- Favicon (located in images folder) -->
+ <title>Directory | Lagos Chamber of Commerce</title>
+ 
+ <!-- Favicon (located in images folder) -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_2.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="manifest" href="images/site.webmanifest">
@@ -17,13 +17,14 @@
   <link rel="stylesheet" href="styles/directory-small.css">
   <link rel="stylesheet" href="styles/directory-large.css">
   <script src="scripts/directory.js" defer ></script>
-  <script type="module" src="scripts/index.js"></script>
+ 
 
   <!-- Facebook Meta (social sharing) -->
   <meta property="og:title" content="Lagos Chamber Directory">
   <meta property="og:description" content="Explore businesses in our chamber community through social media and contact addresses.">
   <meta property="og:image" content="https://promisecaring.github.io/wdd231/chamber/images/hotels.jpg">
-  <meta property="og:url" content="https://promisecaring.github.io/wdd231/chamber/directory.html">
+ <meta property="og:url"
+content="https://promisecaring.github.io/wdd231/chamber/directory.html">
 
   <!-- Google Fonts preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,61 +53,21 @@
     <button id="menu" aria-label="Menu">&#9776;</button>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <!-- <img src="images/hero.jpeg"  alt="Lagos Chamber Building" class="hero-image"> -->
-        <div class="hero-text">
-      <h1>Welcome to the Lagos Chamber of Commerce</h1>
-      <p>Empowering businesses and fostering economic growth across Lagos State.</p>
-      <a href="join.html" class="cta-btn">Join the Chamber</a>
+<main>
+
+    <h1>Lagos Chamber of Commerce Directory</h1>
+
+    <div class="view-buttons">
+        <button id="gridBtn">🔲 Grid View</button>
+        <button id="listBtn">📋 List View</button>
     </div>
+
+    <section id="members" class="grid">
+
     </section>
 
-    <!-- Events Section -->
-     <section class="events">
-        <h2>Upcomming Events</h2>
-        <div class="events-grid">
-            <article>
-                <h3>Business Growth Summit</h3>
-                <p>Date: July 15th, 2026</p>
-                <p>Meet Industry leaders and explore opportunities to scale your business.</p>
-            </article>
-            <article>
-                <h3>Entrepreneur Networking</h3>
-                    <p>Date: October 23rd, 2026</p>
-                    <p>Connect, share, and learn with fellow entrepreneur across Lagos.</p>
-            </article>
-        </div>
-     </section>
+</main>
 
-     <!-- WEATHER SECTION -->
-<section id="weather" class="weather">
-  <h2>Current Weather In Lagos</h2>
-
-  <div id="weather-info">
-      <img id="weather-icon" src="images/weather.svg" alt="Weather Icon">
-      <p id="temperature"><i>Loading...</i></p>
-      <p id="description"></p>
-  </div>
-
-  <div id="forecast">
-      <h3>3-Day Forecast</h3>
-      <ul id="forecast-list"></ul>
-  </div>
-</section>
-
-<!-- SPOTLIGHT SECTION -->
-<section class="spotlight">
-  <h2>Member Spotlights</h2>
-  <div id="spotlights">
-
-
-            <!-- Gold and silver member spotlights populated by JS -->
-        </div>
-       </section>
-
-    </main>
 
   <footer>
      <div class="social">

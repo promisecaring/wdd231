@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Lekki Conservation Centre",
+    "category": "Nature & Wildlife",
+    "location": "Lekki, Lagos",
+    "duration": "2–4 hours",
+    "image": "images/lekki-conservation.webp",
+    "description": "Famous for its canopy walkway, wildlife, and peaceful natural environment.",
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "name": "Nike Art Gallery",
+    "category": "Art & Culture",
+    "location": "Lekki Phase 1",
+    "duration": "1–2 hours",
+    "image": "images/nike-art-gallery.webp",
+    "description": "One of West Africa’s largest art galleries featuring paintings, sculptures, and textiles.",
+    "rating": 4.8
+  },
+  {
+    "id": 3,
+    "name": "Tarkwa Bay Beach",
+    "category": "Beach",
+    "location": "Victoria Island",
+    "duration": "Half-day",
+    "image": "images/tarkwa-bay.webp",
+    "description": "Calm, family-friendly beach ideal for swimming, picnics, and relaxation.",
+    "rating": 4.5
+  },
+  {
+    "id": 4,
+    "name": "National Museum Lagos",
+    "category": "History & Culture",
+    "location": "Onikan, Lagos Island",
+    "duration": "1–3 hours",
+    "image": "images/the-national-museum.webp",
+    "description": "Exhibits Nigeria’s cultural heritage including Nok terracotta and historical artifacts.",
+    "rating": 4.2
+  },
+  {
+    "id": 5,
+    "name": "Freedom Park Lagos",
+    "category": "Culture & Recreation",
+    "location": "Lagos Island",
+    "duration": "1–3 hours",
+    "image": "images/freedom_park.webp",
+    "description": "A former colonial prison transformed into a vibrant cultural venue for concerts and events.",
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "name": "Lekki Leisure Lake",
+    "category": "Outdoor Activities",
+    "location": "Lekki Phase 1",
+    "duration": "2–3 hours",
+    "image": "images/lekki_leisure_lake.webp",
+    "description": "Offers jet skiing, quad biking, and lakeside relaxation.",
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "name": "National Theatre",
+    "category": "Performing Arts",
+    "location": "Iganmu, Lagos",
+    "duration": "1–2 hours",
+    "image": "images/national_theatre.webp",
+    "description": "Iconic architectural landmark for plays, concerts, and cultural festivals.",
+    "rating": 4.4
+  },
+  {
+    "id": 8,
+    "name": "JJT Park",
+    "category": "Park & Recreation",
+    "location": "Alausa, Ikeja",
+    "duration": "1–3 hours",
+    "image": "images/jjt_park.webp",
+    "description": "A clean, modern park suitable for picnics, relaxation, and photo sessions.",
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "name": "Ikeja City Mall",
+    "category": "Shopping & Entertainment",
+    "location": "Alausa, Ikeja",
+    "duration": "2–4 hours",
+    "image": "images/ikeja_city_mall.webp",
+    "description": "Lagos’ premier shopping mall offering movies, restaurants, and major retail brands.",
+    "rating": 4.5
+  },
+  {
+    "id": 10,
+    "name": "Elegushi Beach",
+    "category": "Beach",
+    "location": "Lekki",
+    "duration": "2–5 hours",
+    "image": "images/elegushi_beach.webp",
+    "description": "Popular beach known for nightlife, music, horse rides, and beach games.",
+    "rating": 4.3
+  },
+  {
+    "id": 11,
+    "name": "Kalakuta Museum",
+    "category": "History & Culture",
+    "location": "Ikeja",
+    "duration": "1–2 hours",
+    "image": "images/kalakuta_museum.webp",
+    "description": "Former home of Fela Kuti showcasing his life and music legacy.",
+    "rating": 4.6
+  },
+  {
+    "id": 12,
+    "name": "Omu Resort",
+    "category": "Adventure & Wildlife",
+    "location": "Bogije, Lekki",
+    "duration": "Full day",
+    "image": "images/omu_resort.webp",
+    "description": "Offers a zoo, amusement park, aquarium, go-karts, and water rides.",
+    "rating": 4.4
+  },
+  {
+    "id": 13,
+    "name": "La Campagne Tropicana",
+    "category": "Beach Resort",
+    "location": "Ibeju-Lekki",
+    "duration": "Full day",
+    "image": "images/La_campagne_tropicana.webp",
+    "description": "A luxury beachfront resort offering cultural performances and adventure activities.",
+    "rating": 4.7
+  },
+  {
+    "id": 14,
+    "name": "Balogun Market",
+    "category": "Shopping",
+    "location": "Lagos Island",
+    "duration": "2–5 hours",
+    "image": "images/balogun-market.webp",
+    "description": "One of Nigeria’s busiest markets for fabrics, shoes, food, and general goods.",
+    "rating": 4.1
+  },
+  {
+    "id": 15,
+    "name": "Lekki Arts & Crafts Market",
+    "category": "Arts & Shopping",
+    "location": "Lekki",
+    "duration": "1–3 hours",
+    "image": "images/lekki_art_and_craft_market.webp",
+    "description": "Known for handmade crafts, jewelry, paintings, wood carvings, and souvenirs.",
+    "rating": 4.5
+  }
+]
