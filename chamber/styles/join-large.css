@@ -1,0 +1,147 @@
+/* ============================================
+   JOIN PAGE - LARGE SCREEN STYLES
+   WDD231 Chamber Project
+   ============================================ */
+
+@media only screen and (min-width: 768px) {
+
+    /* Main Content */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* Form and Membership Cards Layout */
+
+    .join-container {
+    display: grid;
+    grid-template-columns: 3fr 1.2fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    align-items: start;
+}
+    /* Membership Cards */
+
+    .membership-cards {
+        position: sticky;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card {
+        transition: transform 0.3s ease,
+                    box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0,0,0,.15);
+    }
+
+    /* Form */
+
+    .application {
+        padding: 2rem;
+    }
+
+    form {
+        gap: 1.25rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1rem;
+        padding: .9rem;
+    }
+
+    textarea {
+        min-height: 160px;
+    }
+
+    .submit-btn {
+        width: fit-content;
+        min-width: 250px;
+        align-self: flex-start;
+        padding: 1rem 2rem;
+    }
+
+    /* Dialog */
+
+    dialog {
+        max-width: 600px;
+        padding: 2rem;
+    }
+
+    dialog h2 {
+        font-size: 1.8rem;
+    }
+
+    dialog ul {
+        font-size: 1.05rem;
+    }
+
+    /* Thank You Page */
+
+    .thankyou {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    .application-summary {
+        margin-top: 2rem;
+    }
+
+    .summary-item {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .summary-item strong {
+        color: var(--primary);
+    }
+
+}
+
+/* ============================================
+   EXTRA LARGE SCREENS
+   ============================================ */
+
+@media only screen and (min-width: 1200px) {
+
+    .join-container {
+        grid-template-columns: 2.5fr 1fr;
+        gap: 3rem;
+    }
+
+    .application {
+        padding: 2.5rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+    }
+
+}

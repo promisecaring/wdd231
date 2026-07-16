@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Lagos Chamber of Commerce">
+
+    <title>Join | Lagos Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+
+<!-- Shared site styles -->
+<link rel="stylesheet" href="styles/directory-small.css">
+<link rel="stylesheet" href="styles/directory-large.css">
+
+<!-- Join page styles -->
+<link rel="stylesheet" href="styles/join-small.css">
+<link rel="stylesheet" href="styles/join-large.css">
+</head>
+
+<body>
+
+ <header>
+    <div class="favicon">
+      <img src="images/logo.png" alt="Chamber of Commerce Logo">
+      <h2>Lagos Chamber Of Commerce</h2>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+<main>
+
+<h1>Join the Chamber</h1>
+
+<div class="join-container">
+
+<!-- ================= FORM ================= -->
+
+<section class="application">
+
+<h2>Membership Application</h2>
+
+<form method="get" action="thankyou.html">
+
+<label>
+First Name *
+
+<input
+type="text"
+name="firstName"
+required
+title="Enter your first name"
+autocomplete="given-name">
+</label>
+
+<label>
+Last Name *
+
+<input
+type="text"
+name="lastName"
+required
+title="Enter your last name"
+autocomplete="family-name">
+</label>
+
+<label>
+Organization Title
+
+<input
+type="text"
+name="organizationTitle"
+title="Enter your organization title"
+autocomplete="organization-title"
+pattern="[A-Za-z\s\-]{7,}">
+</label>
+
+<label>
+Email *
+
+<input
+type="email"
+name="email"
+required
+title="Enter your email address"
+autocomplete="email"
+placeholder="example@email.com">
+</label>
+
+<label>
+Mobile Phone *
+
+<input
+type="tel"
+name="phone"
+required
+title="Enter your mobile number"
+autocomplete="tel">
+</label>
+
+<label>
+Business / Organization Name *
+
+<input
+type="text"
+name="organization"
+required
+title="Business name"
+autocomplete="organization">
+</label>
+
+<label>
+Membership Level
+
+<select
+name="membership"
+title="Select Membership Level">
+
+<option value="">Choose a Membership</option>
+
+<option value="np">
+NP Membership
+</option>
+
+<option value="bronze">
+Bronze Membership
+</option>
+
+<option value="silver">
+Silver Membership
+</option>
+
+<option value="gold">
+Gold Membership
+</option>
+
+</select>
+
+</label>
+
+<label>
+Business Description
+
+<textarea
+name="description"
+title="Describe your business"
+rows="6"></textarea>
+
+</label>
+
+<input
+type="hidden"
+name="timestamp"
+id="timestamp">
+
+<input
+type="submit"
+value="Submit Membership Application"
+class="submit-btn">
+
+</form>
+
+</section>
+
+<!-- ================= MEMBERSHIP CARDS ================= -->
+
+<aside class="membership-cards">
+
+<div class="card">
+
+<h3>NP Membership</h3>
+
+<p>For nonprofit organizations.</p>
+
+<button
+type="button"
+data-dialog="npModal">
+Learn More
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Bronze Membership</h3>
+
+<p>Perfect for small businesses.</p>
+
+<button
+type="button"
+data-dialog="bronzeModal">
+Learn More
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Silver Membership</h3>
+
+<p>Extra exposure and networking.</p>
+
+<button
+type="button"
+data-dialog="silverModal">
+Learn More
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Gold Membership</h3>
+
+<p>Maximum visibility and benefits.</p>
+
+<button
+type="button"
+data-dialog="goldModal">
+Learn More
+</button>
+
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+<!-- ================= NP MODAL ================= -->
+
+<dialog id="npModal">
+
+<h2>NP Membership</h2>
+
+<ul>
+
+<li>No membership fee</li>
+
+<li>Community networking</li>
+
+<li>Business directory listing</li>
+
+<li>Chamber newsletters</li>
+
+</ul>
+
+<button class="close">Close</button>
+
+</dialog>
+
+<!-- ================= BRONZE MODAL ================= -->
+
+<dialog id="bronzeModal">
+
+<h2>Bronze Membership</h2>
+
+<ul>
+
+<li>Everything in NP</li>
+
+<li>Business workshops</li>
+
+<li>Advertising opportunities</li>
+
+<li>Member discounts</li>
+
+</ul>
+
+<button class="close">Close</button>
+
+</dialog>
+
+<!-- ================= SILVER MODAL ================= -->
+
+<dialog id="silverModal">
+
+<h2>Silver Membership</h2>
+
+<ul>
+
+<li>Everything in Bronze</li>
+
+<li>Homepage spotlight</li>
+
+<li>Priority event registration</li>
+
+<li>Exclusive networking events</li>
+
+</ul>
+
+<button class="close">Close</button>
+
+</dialog>
+
+<!-- ================= GOLD MODAL ================= -->
+
+<dialog id="goldModal">
+
+<h2>Gold Membership</h2>
+
+<ul>
+
+<li>Everything in Silver</li>
+
+<li>Featured advertising</li>
+
+<li>Premium business listing</li>
+
+<li>VIP business events</li>
+
+<li>Largest event discounts</li>
+
+<li>Priority sponsorship opportunities</li>
+
+</ul>
+
+<button class="close">Close</button>
+
+</dialog>
+
+<footer>
+     <div class="social">
+      <a href="https://www.linkedin.com/in/promise-oghene-57b800298" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon">
+      </a>
+      <a href="whatsapp.com/promise_oghene" target="_blank" aria-label="whatsapp">
+        <img src="images/whatsapp.svg" alt="whatsapp icon">
+      </a>
+      <a href="https://www.facebook.com/promise_oghene" target="_blank" aria-label="facebook Logo">
+        <img src="images/facebook_logo.svg" alt="facebook icon">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> 🌸Promise Oghene🌸 | Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+
+  </footer>
+
+</body>
+</html>
