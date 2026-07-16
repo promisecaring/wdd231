@@ -7,39 +7,38 @@
 
     <title>Application Received | Lagos Chamber of Commerce</title>
 
-    <link rel="icon" href="favicon.ico">
+     <!-- Favicon (located in images folder) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber-small.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
-    <link rel="stylesheet" href="styles/join-small.css">
-    <link rel="stylesheet" href="styles/join-large.css">
-
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+<link rel="stylesheet" href="styles/normalize.css">
+<!-- Shared site styles -->
+<link rel="stylesheet" href="styles/directory-small.css">
+<link rel="stylesheet" href="styles/directory-large.css">
+<!-- Join page styles -->
+<link rel="stylesheet" href="styles/join-small.css">
+<link rel="stylesheet" href="styles/join-large.css">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <img src="images/logo.webp" alt="Lagos Chamber of Commerce Logo" width="80" height="80">
-        <div>
-            <h1>Lagos Chamber of Commerce</h1>
-            <p>Business Growth & Community</p>
-        </div>
+    <div class="favicon">
+      <img src="images/logo.png" alt="Chamber of Commerce Logo">
+      <h2>Lagos Chamber Of Commerce</h2>
     </div>
 
-    <button id="menu" aria-label="Open Navigation"></button>
-
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="discover.html">Discover</a>
-        <a href="join.html">Join</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
     </nav>
-</header>
 
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
 <main>
 
 <section class="thankyou">
@@ -97,9 +96,22 @@ A member of our team will contact you after reviewing your application.
 </main>
 
 <footer>
-    <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+     <div class="social">
+      <a href="https://www.linkedin.com/in/promise-oghene-57b800298" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon">
+      </a>
+      <a href="whatsapp.com/promise_oghene" target="_blank" aria-label="whatsapp">
+        <img src="images/whatsapp.svg" alt="whatsapp icon">
+      </a>
+      <a href="https://www.facebook.com/promise_oghene" target="_blank" aria-label="facebook Logo">
+        <img src="images/facebook_logo.svg" alt="facebook icon">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> 🌸Promise Oghene🌸 | Lagos, Nigeria</p>
     <p id="lastModified"></p>
-</footer>
+
+  </footer>
 
 </body>
 </html>
