@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is the Lagos Chamber of Commerce directory for exploring, navigating and joining.">
+  <meta name="description" content="Welcome to the Lagos Chamber of Commerce. Discover events, weather, featured members, and opportunities to join our business community.">
   <meta name="author" content="Promise Oghene">
-  <title>Lagos Chamber of Commerce Directory</title>
+  <title>Lagos Chamber of Commerce | Home</title>
 
   <!-- Favicon (located in images folder) -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_2.png">
@@ -22,7 +22,7 @@
   <meta property="og:title" content="Lagos Chamber Directory">
   <meta property="og:description" content="Explore businesses in our chamber community through social media and contact addresses.">
   <meta property="og:image" content="https://promisecaring.github.io/wdd231/chamber/images/hotels.jpg">
-  <meta property="og:url" content="https://promisecaring.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://promisecaring.github.io/wdd231/chamber/index.html">
 
   <!-- Google Fonts preconnect -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,17 +54,23 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-        <!-- <img src="images/hero.jpeg"  alt="Lagos Chamber Building" class="hero-image"> -->
-        <div class="hero-text">
-      <h1>Welcome to the Lagos Chamber of Commerce</h1>
-      <p>Empowering businesses and fostering economic growth across Lagos State.</p>
-      <a href="join.html" class="cta-btn">Join the Chamber</a>
+    <img
+        src="images/hotels.jpg"
+        alt="Lagos skyline"
+        class="hero-image"
+        width="1200"
+        height="600">
+
+    <div class="hero-text">
+        <h1>Welcome to the Lagos Chamber of Commerce</h1>
+        <p>Empowering businesses and fostering economic growth across Lagos State.</p>
+        <a href="join.html" class="cta-btn">Join the Chamber</a>
     </div>
-    </section>
+</section>
 
     <!-- Events Section -->
      <section class="events">
-        <h2>Upcomming Events</h2>
+        <h2>Upcoming Events</h2>
         <div class="events-grid">
             <article>
                 <h3>Business Growth Summit</h3>
@@ -74,7 +80,7 @@
             <article>
                 <h3>Entrepreneur Networking</h3>
                     <p>Date: October 23rd, 2026</p>
-                    <p>Connect, share, and learn with fellow entrepreneur across Lagos.</p>
+                    <p>Connect, share, and learn with fellow entrepreneurs across Lagos.</p>
             </article>
         </div>
      </section>
@@ -103,7 +109,7 @@
 <!-- SPOTLIGHT SECTION -->
 <section class="spotlight">
   <h2>Member Spotlights</h2>
-  <div id="spotlights">
+  <div id="spotlights" class="spotlight-container"></div>
 
 
             <!-- Gold and silver member spotlights populated by JS -->
