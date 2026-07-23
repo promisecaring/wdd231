@@ -219,6 +219,12 @@ nav a.active {
   text-decoration: underline;
 }
 
+.spotlight-card .membership {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--primary-color);
