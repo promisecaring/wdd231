@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover interesting places and attractions in Lagos with the Lagos Chamber of Commerce.">
+    <meta name="author" content="Promise Oghene">
+
+    <title>Discover | Lagos Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon_2.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/directory-small.css">
+<link rel="stylesheet" href="styles/directory-large.css">
+<link rel="stylesheet" href="styles/join-small.css">
+<link rel="stylesheet" href="styles/join-large.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/discover-small.css">
+<link rel="stylesheet" href="styles/discover-large.css">
+
+
+<!-- Facebook Meta (social sharing) -->
+  <meta property="og:title" content="Lagos Chamber Directory">
+  <meta property="og:description" content="Explore businesses in our chamber community through social media and contact addresses.">
+  <meta property="og:image" content="https://promisecaring.github.io/wdd231/chamber/images/hotels.jpg">
+ <meta property="og:url"
+content="https://promisecaring.github.io/wdd231/chamber/directory.html">
+
+  <!-- Google Fonts preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+<!-- JavaScript -->
+<script src="scripts/navigation.js" defer></script>
+<script type="module" src="scripts/discover.js"></script>
+<script type="module" src="scripts/join.js"></script>
+
+</head>
+
+
+<body>
+
+  <header>
+    <div class="favicon">
+      <img src="images/logo.png" alt="Chamber of Commerce Logo">
+      <h2>Lagos Chamber Of Commerce</h2>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+<main>
+
+    <section id="visit-message" class="visit-box"></section>
+
+    <section class="discover-grid" id="discover-grid">
+      <!-- Cards inserted by JS -->
+    </section>
+</main>
+
+<footer>
+
+    
+    
+     <div class="social">
+      <a href="https://www.linkedin.com/in/promise-oghene-57b800298" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon">
+      </a>
+      <a href="web.whatsapp.com" target="_blank" aria-label="whatsapp">
+        <img src="images/whatsapp.svg" alt="whatsapp icon">
+      </a>
+      <a href="https://www.facebook.com/promise_oghene" target="_blank" aria-label="facebook Logo">
+        <img src="images/facebook_logo.svg" alt="facebook icon">
+      </a>
+    </div>
+
+    <p>© <span id="currentyear"></span> 🌸Promise Oghene🌸 | Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+
+  </footer>
+
+</body>
+</html>

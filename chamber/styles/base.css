@@ -1,0 +1,113 @@
+/* ===========================
+   Discover Page - Base Styles
+=========================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.visit-message {
+    background: #e8f4fd;
+    border-left: 5px solid #004080;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.discover-intro {
+    margin-bottom: 2rem;
+}
+
+.discover-intro h2 {
+    color: #004080;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight";
+}
+
+
+
+/* Grid Areas */
+
+.discover-grid article:nth-child(1){grid-area:one;}
+.discover-grid article:nth-child(2){grid-area:two;}
+.discover-grid article:nth-child(3){grid-area:three;}
+.discover-grid article:nth-child(4){grid-area:four;}
+.discover-grid article:nth-child(5){grid-area:five;}
+.discover-grid article:nth-child(6){grid-area:six;}
+.discover-grid article:nth-child(7){grid-area:seven;}
+.discover-grid article:nth-child(8){grid-area:eight;}
+
+.discover-grid article{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+    overflow:hidden;
+    padding:1rem;
+}
+
+.discover-grid h2{
+    color:#004080;
+}
+
+.discover-grid figure{
+    margin:0;
+}
+
+.discover-grid img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:8px;
+}
+
+.discover-grid address{
+    margin:1rem 0;
+    font-style:normal;
+    font-weight:bold;
+}
+
+.discover-grid p{
+    line-height:1.6;
+}
+
+.discover-grid button{
+    margin-top:1rem;
+    padding:.75rem 1.25rem;
+    border:none;
+    background:#004080;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.discover-grid button:hover{
+    background:#0066cc;
+}

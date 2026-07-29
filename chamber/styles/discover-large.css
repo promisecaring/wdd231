@@ -1,0 +1,107 @@
+/* Visit box */
+.visit-box {
+  padding: 1rem;
+  background: #eef5ff;
+  border-left: 5px solid #305fa3;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Grid container */
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1200px;     /* keeps layout clean on desktops */
+  margin: 0 auto;        /* centers the grid */
+  padding: 1rem;
+}
+
+/* Make images responsive */
+.card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Small screens: 1 column */
+@media (max-width: 639px) {
+  .discover-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h";
+  }
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+}
+
+/* Large screens: 4 columns */
+@media (min-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a b c d"
+      "e f g h";
+  }
+}
+
+/* Assign grid areas */
+.item-1 { grid-area: a; }
+.item-2 { grid-area: b; }
+.item-3 { grid-area: c; }
+.item-4 { grid-area: d; }
+.item-5 { grid-area: e; }
+.item-6 { grid-area: f; }
+.item-7 { grid-area: g; }
+.item-8 { grid-area: h; }
+
+/* Card styling */
+.card {
+  border: 1px solid #dce1eb;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* Hover effects for wider screens */
+@media (min-width: 640px) {
+  .card img {
+    transition: 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+/* Button */
+.card button {
+  margin-top: auto;
+  padding: 0.5rem 0;
+  border: none;
+  background: #305fa3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
