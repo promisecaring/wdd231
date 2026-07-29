@@ -1,0 +1,215 @@
+/* ==========================================
+   Drift Racing Club - Site Plan Stylesheet
+   WDD 231 Final Project
+========================================== */
+
+/* Google Fonts
+Headings: Oswald
+Body: Roboto
+*/
+
+:root {
+    --primary: #1E1E1E;
+    --secondary: #D72638;
+    --light: #F5F5F5;
+    --white: #FFFFFF;
+    --black: #000000;
+    --border: #d9d9d9;
+    --shadow: 0 4px 12px rgba(0,0,0,0.15);
+    --max-width: 1100px;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: var(--light);
+    color: var(--primary);
+    line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 6px solid var(--secondary);
+}
+
+header h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+    background: var(--white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+section h2 {
+    font-family: "Oswald", sans-serif;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    border-left: 6px solid var(--secondary);
+    padding-left: .8rem;
+    font-size: 2rem;
+}
+
+section h3 {
+    font-family: "Oswald", sans-serif;
+    color: var(--primary);
+    margin-top: 1.2rem;
+    margin-bottom: .6rem;
+}
+
+/* ---------- Paragraphs ---------- */
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ---------- Lists ---------- */
+
+ul,
+ol {
+    margin-left: 2rem;
+}
+
+li {
+    margin-bottom: .6rem;
+}
+
+/* ---------- Table ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th {
+    background: var(--secondary);
+    color: var(--white);
+    padding: .9rem;
+    text-align: left;
+}
+
+td {
+    border: 1px solid var(--border);
+    padding: .9rem;
+}
+
+tr:nth-child(even) {
+    background: var(--light);
+}
+
+/* ---------- Code / Sitemap ---------- */
+
+pre {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    margin-top: 1rem;
+}
+
+/* ---------- Links ---------- */
+
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    pre {
+        font-size: .85rem;
+    }
+}
+
+/* ---------- Desktop ---------- */
+
+@media screen and (min-width: 900px) {
+
+    main {
+        display: grid;
+        gap: 2rem;
+    }
+
+    section {
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    section:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    }
+}
