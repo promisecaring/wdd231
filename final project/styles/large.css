@@ -1,0 +1,248 @@
+/* ==========================================
+   Drift Racing Club
+   WDD 231 Final Project
+   Desktop Styles (900px+)
+========================================== */
+
+@media screen and (min-width: 900px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    /* ---------- Hide Hamburger ---------- */
+
+    #menuButton {
+        display: none;
+    }
+
+    /* ---------- Navigation ---------- */
+
+    nav {
+        position: static;
+        display: block !important;
+        width: auto;
+        background: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: .75rem 1.2rem;
+        border-radius: 5px;
+        transition: .3s;
+    }
+
+    nav a:hover {
+        background: var(--secondary);
+    }
+
+    /* ---------- Hero ---------- */
+
+    .hero picture img {
+        height: 650px;
+    }
+
+    .hero-content {
+        width: 700px;
+        padding: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* ---------- Sections ---------- */
+
+    section {
+        padding: 4rem 2rem;
+    }
+
+    /* ---------- About ---------- */
+
+    .about {
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about p {
+        max-width: 900px;
+        margin: 1rem auto;
+    }
+
+    /* ---------- Featured ---------- */
+
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .featured img {
+        height: 420px;
+        object-fit: cover;
+    }
+
+    /* ---------- News ---------- */
+
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .news article {
+        transition: .3s ease;
+    }
+
+    .news article:hover {
+        transform: translateY(-8px);
+    }
+
+    /* ---------- Driver Spotlight ---------- */
+
+    #spotlightContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ---------- Gallery ---------- */
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-grid img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* ---------- Join ---------- */
+
+    .join {
+        border-radius: 12px;
+        margin: 3rem auto;
+        max-width: 1100px;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+        padding: 3rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+        text-align: left;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .social {
+        justify-content: flex-start;
+    }
+
+    footer hr {
+        max-width: 1200px;
+    }
+
+}
+
+/* ==========================================
+   Extra Large Screens (1400px+)
+========================================== */
+
+@media screen and (min-width: 1400px) {
+
+    main {
+        max-width: 1300px;
+    }
+
+    .hero picture img {
+        height: 750px;
+    }
+
+    .hero-content {
+        width: 800px;
+    }
+
+    .hero h1 {
+        font-size: 4.8rem;
+    }
+
+    section {
+        padding: 5rem 2rem;
+    }
+
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    .drivers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    .drivers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large Screens */
+
+@media (min-width: 1400px) {
+    .drivers-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ==========================
+   Responsive Events Gallery
+========================== */
+
+@media (min-width: 640px) {
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .events-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

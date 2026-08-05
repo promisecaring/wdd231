@@ -1,0 +1,50 @@
+[
+  {
+    "name": "James Deane",
+    "country": "Ireland",
+    "car": "Ford Mustang RTR",
+    "team": "RTR Motorsports",
+    "image": "images/james-deane.jpg",
+    "description": "James Deane is a multiple Formula Drift champion known for his aggressive driving style and incredible precision."
+  },
+  {
+    "name": "Daigo Saito",
+    "country": "Japan",
+    "car": "Toyota GR Supra",
+    "team": "Fat Five Racing",
+    "image": "images/daigo-saito.jpg",
+    "description": "Daigo Saito is one of Japan's most successful drift drivers, famous for winning championships across several countries."
+  },
+  {
+    "name": "Fredric Aasbø",
+    "country": "Norway",
+    "car": "Toyota GR Supra",
+    "team": "Papadakis Racing",
+    "image": "images/fredric-aasabo.jpg",
+    "description": "Fredric Aasbø is an international drift superstar with multiple Formula Drift victories and exceptional consistency."
+  },
+  {
+    "name": "Chris Forsberg",
+    "country": "United States",
+    "car": "Nissan Z",
+    "team": "Forsberg Racing",
+    "image": "images/chris-forsberg.webp",
+    "description": "Chris Forsberg is a three-time Formula Drift Champion renowned for his technical skill and sportsmanship."
+  },
+  {
+    "name": "Chelsea DeNofa",
+    "country": "United States",
+    "car": "BMW M2",
+    "team": "BMW Racing",
+    "image": "images/chelsea-denofa.jpg",
+    "description": "Chelsea DeNofa is a fan favorite whose fearless driving and entertaining style have earned numerous podium finishes."
+  },
+  {
+    "name": "Adam LZ",
+    "country": "United States",
+    "car": "Nissan S15 Silvia",
+    "team": "LZ Motorsports",
+    "image": "images/adam.jpg",
+    "description": "Adam LZ combines professional drifting with content creation, inspiring thousands of new drifting enthusiasts."
+  }
+]

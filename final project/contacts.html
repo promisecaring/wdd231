@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Drift Racing Club">
+    <meta name="author" content="Promise Oghene">
+
+    <title>Contact | Drift Racing Club</title>
+
+    <link rel="icon" href="images/favicon_2.png" type="image/png" sizes="32x32">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <script src="scripts/normalize.css" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/drivers.js" defer></script>
+    <script src="scripts/contacts.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-flag-checkered"></i>
+        <span>Drift Racing Club</span>
+    </div>
+
+    <button id="menuButton"
+            aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+
+        <ul>
+
+            <li>
+                <a href="index.html"
+                   class="none">
+                   Home
+                </a>
+            </li>
+
+            <li>
+                <a href="events.html">
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="drivers.html">
+                    Drivers
+                </a>
+            </li>
+
+            <li>
+                <a href="contacts.html">
+                    Contacts
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you. Send us a message below.</p>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-info">
+            <h3>Club Information</h3>
+
+            <p><strong>📍 Address:</strong><br>
+            Drift Racing Club Headquarters<br>
+            Lagos, Nigeria</p>
+
+            <p><strong>📞 Phone:</strong><br>
+            +234 8144483646</p>
+
+            <p><strong>📧 Email:</strong><br>
+            info@driftracingclub.com</p>
+
+            <p><strong>🕒 Office Hours:</strong><br>
+            Monday – Friday<br>
+            9:00 AM – 5:00 PM</p>
+        </div>
+
+        <div class="contact-form">
+
+            <h3>Send Us a Message</h3>
+
+            <form action="thankyou.html" method="get">
+
+                <label for="fname">
+                    First Name
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        required
+                        autocomplete="given-name">
+                </label>
+
+                <label for="lname">
+                    Last Name
+                    <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        required
+                        autocomplete="family-name">
+                </label>
+
+                <label for="email">
+                    Email Address
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        placeholder="example@email.com">
+                </label>
+
+                <label for="phone">
+                    Phone Number
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autocomplete="tel"
+                        placeholder="+2348144483646">
+                </label>
+
+                <label for="subject">
+                    Subject
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required>
+                </label>
+
+                <label for="message">
+                    Message
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+                </label>
+
+                <input
+                    type="submit"
+                    value="Send Message"
+                    class="submit-btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>
+       <p>©2026 <span id="currentyear"></span> Drift Racing Club 🌸Promise Oghene🌸 | Lagos, Nigeria</p>
+        
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

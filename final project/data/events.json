@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Drift Championship Round 1",
+    "date": "March 15, 2027",
+    "location": "Lagos International Raceway, Nigeria",
+    "image": "images/drift-competition-round1.jpg",
+    "description": "Experience the excitement as the season begins with the country's best drift drivers competing for championship points."
+  },
+  {
+    "title": "Night Drift Festival",
+    "date": "April 10, 2027",
+    "location": "Abuja Speed Arena, Nigeria",
+    "image": "images/night-driftfestival.jpg",
+    "description": "Enjoy thrilling night-time drifting, live music, food vendors, and entertainment for motorsport fans of all ages."
+  },
+  {
+    "title": "Drift Skills Workshop",
+    "date": "May 8, 2027",
+    "location": "Port Harcourt Motorsport Park, Nigeria",
+    "image": "images/drift-workshop.jpg",
+    "description": "Professional instructors teach beginners and intermediate drivers the fundamentals of safe and controlled drifting."
+  },
+  {
+    "title": "Pro-Am Drift Challenge",
+    "date": "June 19, 2027",
+    "location": "Ibadan Racing Circuit, Nigeria",
+    "image": "images/pro-am-drift-challenge.jpg",
+    "description": "Professional and amateur drivers compete together in an exciting head-to-head drifting competition."
+  },
+  {
+    "title": "Summer Drift Festival",
+    "date": "July 24, 2027",
+    "location": "Enugu Motorsport Arena, Nigeria",
+    "image": "images/summer-drift-festival.jpg",
+    "description": "A full day of drifting, car exhibitions, merchandise, food stands, family activities, and live performances."
+  },
+  {
+    "title": "National Drift Finals",
+    "date": "September 18, 2027",
+    "location": "National Racing Complex, Lagos, Nigeria",
+    "image": "images/drift-final.jpg",
+    "description": "Watch Nigeria's best drift drivers compete for the National Drift Championship title in the season finale."
+  },
+  {
+    "title": "International Drift Invitational",
+    "date": "October 30, 2027",
+    "location": "Abuja Grand Raceway, Nigeria",
+    "image": "images/event7.webp",
+    "description": "Top international drift drivers join local champions in an elite invitational competition featuring spectacular tandem drifting."
+  },
+  {
+    "title": "End of Season Drift Expo",
+    "date": "December 5, 2027",
+    "location": "Eko Convention Centre, Lagos, Nigeria",
+    "image": "images/event8.webp",
+    "description": "Celebrate the end of the drifting season with awards, custom car displays, sponsor exhibitions, and fan meet-and-greets."
+  }
+]
