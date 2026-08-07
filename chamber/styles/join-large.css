@@ -1,27 +1,30 @@
-/* ============================================
+/* =====================================================
    JOIN PAGE - LARGE SCREEN STYLES
    WDD231 Chamber Project
-   ============================================ */
+===================================================== */
 
 @media only screen and (min-width: 768px) {
 
-    /* Main Content */
+    /* ---------- Main Content ---------- */
 
     main {
         padding: 2rem;
     }
 
-    /* Form and Membership Cards Layout */
+
+    /* ---------- Form and Membership Cards ---------- */
 
     .join-container {
-    display: grid;
-    grid-template-columns: 3fr 1.2fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    align-items: start;
-}
-    /* Membership Cards */
+        display: grid;
+        grid-template-columns: 3fr 1.2fr;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 2rem auto;
+        align-items: start;
+    }
+
+
+    /* ---------- Membership Cards ---------- */
 
     .membership-cards {
         position: sticky;
@@ -32,16 +35,18 @@
     }
 
     .card {
-        transition: transform 0.3s ease,
-                    box-shadow 0.3s ease;
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
     }
 
     .card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 10px 20px rgba(0,0,0,.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 
-    /* Form */
+
+    /* ---------- Form ---------- */
 
     .application {
         padding: 2rem;
@@ -59,7 +64,7 @@
     select,
     textarea {
         font-size: 1rem;
-        padding: .9rem;
+        padding: 0.9rem;
     }
 
     textarea {
@@ -73,7 +78,8 @@
         padding: 1rem 2rem;
     }
 
-    /* Dialog */
+
+    /* ---------- Dialog ---------- */
 
     dialog {
         max-width: 600px;
@@ -88,7 +94,8 @@
         font-size: 1.05rem;
     }
 
-    /* Thank You Page */
+
+    /* ---------- Thank You Page ---------- */
 
     .thankyou {
         max-width: 850px;
@@ -111,11 +118,30 @@
         color: var(--primary);
     }
 
+
+    /* ---------- Desktop Navigation ---------- */
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
 }
 
-/* ============================================
+
+/* =====================================================
    EXTRA LARGE SCREENS
-   ============================================ */
+===================================================== */
 
 @media only screen and (min-width: 1200px) {
 
@@ -143,5 +169,4 @@
     .submit-btn {
         font-size: 1.1rem;
     }
-
 }

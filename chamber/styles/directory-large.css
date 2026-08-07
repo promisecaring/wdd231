@@ -1,4 +1,10 @@
+/* =====================================================
+   LARGE SCREEN STYLES
+===================================================== */
+
 @media screen and (min-width: 768px) {
+
+    /* ---------- Header ---------- */
 
     header {
         display: flex;
@@ -7,21 +13,45 @@
         padding: 1rem 2rem;
     }
 
-    nav ul {
-        display: flex;
-        gap: 2rem;
+
+    /* ---------- Navigation ---------- */
+
+    nav {
+        display: block;
     }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        padding: 0;
+        list-style: none;
+    }
+
+
+    /* ---------- Hide Hamburger ---------- */
 
     #menu {
         display: none;
     }
 
-    /* Three-column grid on larger screens */
+
+    /* ---------- Directory Grid ---------- */
+
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Two-column layout for list view */
+
+    /* ---------- Directory List ---------- */
+
     #members.list .member-card {
         grid-template-columns: 180px 1fr;
     }

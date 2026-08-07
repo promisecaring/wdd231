@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==========================
 
     const menuButton = document.querySelector("#menu");
-    const navigation = document.querySelector(".navigation");
+    const navigation = document.querySelector("nav");
 
     if (menuButton && navigation) {
         menuButton.addEventListener("click", () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Footer Information
     // ==========================
 
-    const year = document.querySelector("#year");
+    const year = document.querySelector("#currentyear");
 
     if (year) {
         year.textContent = new Date().getFullYear();

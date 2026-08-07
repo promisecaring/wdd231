@@ -1,325 +1,295 @@
-/* directory-small.css | Chamber Home Page Styles */
+/* =====================================================
+   directory-small.css
+   Chamber Project - Small Screen Styles
+===================================================== */
 
 /* ---------- General Styles ---------- */
-html, body {
-  overflow-x: hidden;
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 :root {
-  --primary-color: #003a5c;
-  --secondary-color: #ffcc00;
-  --background-color: #f4f4f4;
-  --text-color: #333;
+    --primary-color: #003a5c;
+    --secondary-color: #ffcc00;
+    --background-color: #f4f4f4;
+    --text-color: #333;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 
-/* ---------- Header ---------- */
+
+/* =====================================================
+   HEADER
+===================================================== */
+
 header {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
 }
 
 header .favicon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
 header .favicon img {
-  width: 45px;
-  height: 45px;
+    width: 45px;
+    height: 45px;
 }
 
 header h1 {
-  margin: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+
+/* =====================================================
+   HAMBURGER BUTTON
+===================================================== */
+
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+/* Hide navigation initially on mobile */
+
+nav {
+    display: none;
+}
+
+/* Show navigation when JavaScript adds "open" */
+
+nav.open {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+.nav-links li {
+    padding: 0.75rem;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 nav a:hover,
 nav a.active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-#menu {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  cursor: pointer;
-}
 
-/* ---------- Hero Section ---------- */
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
 .hero {
-  background: url("../images/hotels.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 8rem 1rem;
-  position: relative;
+    background: url("../images/hotels.jpg") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    position: relative;
 }
 
 .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
 }
-
 
 .hero h1,
 .hero p,
 .hero .cta-btn {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
-.hero h1  {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-btn {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  font-weight: bold;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
-  background-color: #ffd633;
+    background-color: #ffd633;
 }
 
-/* ---------- Events Section ---------- */
+
+/* =====================================================
+   EVENTS SECTION
+===================================================== */
+
 .events {
-  background-color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 .events h2 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
-.event-card {
-  margin: 1rem auto;
-  max-width: 600px;
-  background-color: var(--background-color);
-  border-left: 5px solid var(--secondary-color);
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-/* ---------- Weather Section ---------- */
+.events-grid article {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    border-left: 5px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   WEATHER SECTION
+===================================================== */
+
 .weather {
-  background-color: #e8f4f8;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-color: #e8f4f8;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
 .weather h2 {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 #weather-info {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 #weather-icon {
-  width: 80px;
-  height: 80px;
+    width: 80px;
+    height: 80px;
 }
 
-/* ---------- Spotlight Section ---------- */
-.spotlight {
-  background-color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+
+/* =====================================================
+   SPOTLIGHT SECTION
+===================================================== */
+
+.spotlight,
+.spotlight-section {
+    background-color: white;
+    text-align: center;
+    padding: 2rem 1rem;
 }
 
-.spotlight h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+.spotlight h2,
+.spotlight-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
 }
 
 .spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .spotlight-card {
-  background-color: var(--background-color);
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .spotlight-card:hover {
-  transform: translateY(-5px);
+    transform: scale(1.03);
 }
 
 .spotlight-card img {
-  max-width: 100%;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .spotlight-card h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
 }
 
 .spotlight-card a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: bold;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .spotlight-card a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .spotlight-card .membership {
-  font-size: 0.9rem;
-  color: var(--primary-color);
-  font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
-/* ---------- Footer ---------- */
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-}
-
-footer .social {
-  margin-bottom: 0.5rem;
-}
-
-footer .social a img {
-  width: 25px;
-  margin: 0 0.5rem;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 700px) {
-  nav ul {
-    flex-direction: column;
-    display: none;
-  }
-
-  .nav-links.show {
-    display:flex;
-
-  }
-
-  #menu {
-    display: block;
-  }
-
-  .hero {
-    padding: 3rem 1rem;
-  }
-
-  .spotlight-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ---------- Spotlight Section ---------- */
-.spotlight-section {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f9f9f9;
-}
-
-.spotlight-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.spotlight-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.spotlight-card:hover {
-  transform: scale(1.03);
-}
-
-.spotlight-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.spotlight-card a {
-  color: var(--secondary-color);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.spotlight-card a:hover {
-  text-decoration: underline;
-}
-
-.spotlight-card .membership {
-  font-size: 0.9rem;
-  color: var(--primary-color);
-  font-weight: 600;
-}
 
 /* =====================================================
-   DIRECTORY PAGE STYLES
+   DIRECTORY PAGE
 ===================================================== */
 
 main h1 {
@@ -328,7 +298,9 @@ main h1 {
     margin: 2rem 0 1rem;
 }
 
-/* Grid/List Buttons */
+
+/* ---------- Grid/List Buttons ---------- */
+
 .view-buttons {
     display: flex;
     justify-content: center;
@@ -340,12 +312,12 @@ main h1 {
     background-color: var(--primary-color);
     color: #fff;
     border: none;
-    padding: .8rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .view-buttons button:hover {
@@ -353,31 +325,37 @@ main h1 {
     color: var(--primary-color);
 }
 
-/* Members Container */
+
+/* ---------- Members Container ---------- */
+
 #members {
     padding: 1rem;
 }
 
-/* Grid View */
+
+/* ---------- Grid View ---------- */
+
 #members.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-/* Member Card */
+
+/* ---------- Member Card ---------- */
+
 .member-card {
     background: #fff;
     border-radius: 10px;
     padding: 1.25rem;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,.12);
-    transition: transform .3s ease, box-shadow .3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .member-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .member-card img {
@@ -390,11 +368,11 @@ main h1 {
 
 .member-card h3 {
     color: var(--primary-color);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .member-card p {
-    margin: .4rem 0;
+    margin: 0.4rem 0;
     line-height: 1.5;
 }
 
@@ -408,7 +386,9 @@ main h1 {
     text-decoration: underline;
 }
 
-/* List View */
+
+/* ---------- List View ---------- */
+
 #members.list {
     display: flex;
     flex-direction: column;
@@ -427,4 +407,67 @@ main h1 {
     width: 100px;
     height: 100px;
     margin: 0;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer .social {
+    margin-bottom: 0.5rem;
+}
+
+footer .social a img {
+    width: 25px;
+    margin: 0 0.5rem;
+}
+
+
+/* =====================================================
+   LARGE SCREEN OVERRIDE
+   This should normally be in large.css,
+   but included here only as a safeguard.
+===================================================== */
+
+@media screen and (min-width: 701px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        padding: 0;
+    }
+
+    .hero {
+        padding: 8rem 1rem;
+    }
+
+    .spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
